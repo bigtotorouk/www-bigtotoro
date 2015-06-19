@@ -1,0 +1,110 @@
+{% extends 'web/base.html' %}
+{% block js %}
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/company/company.css"/>
+{% endblock %}
+{% block content %}
+
+    <div class="container company-container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header"><a class="navbar-brand  text-center" href="/"><strong>Bigtotoro</strong></a>
+            </div>
+            <div>
+                <ul class="nav masthead-nav navbar-right">
+                    <li><a href="{% url 'company_home' %}">Home</a></li>
+                    <li class="active"><a href="{% url 'company_portfolio' %}">Portfolio</a></li>
+                    <li><a href="{% url 'company_contact' %}">Contact</a></li>
+                    <li><a href="{% url "blog_home" %}">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header-line"></div>
+
+    <div class="container">
+        <div class="row">
+           <div class="col-md-6">
+               <div class="panel panel-default">
+                   <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project0.jpg"></div>
+                   <div class="panel-footer panel-info">
+                       <h4 class="text-center">Ena Project</h4>
+                       Project your safety and electrical equipment during a planned outage.
+                   </div>
+               </div>
+           </div>
+            <div class="col-md-6">
+                   <div class="panel panel-default">
+                       <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project5.png"></div>
+                       <div class="panel-footer panel-info">
+                           <h4 class="text-center">Mingyou Science & Technology</h4>
+                           preview site： http://www.huanshuo.net/
+                       </div>
+                   </div>
+               </div>
+
+        </div>
+        <div class="row">
+               <div class="col-md-6">
+                   <div class="panel panel-default">
+                       <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project2.jpg"></div>
+                       <div class="panel-footer panel-info">
+                           <h4 class="text-center">Immigrate Project</h4>
+                           The application used to promote immigration, study abroad, overseas property, skilled migration. Users can browse and view on the top (immigration, study abroad, overseas property, immigration) project information, and put forward my own problems with expert exchanges, feedback.
+                       </div>
+                   </div>
+               </div>
+                <div class="col-md-6">
+                   <div class="panel panel-default">
+                       <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project4.jpg"></div>
+                       <div class="panel-footer panel-info">
+                           <h4 class="text-center">Nvxiuwang Project</h4>
+                           The mobile client of website : www.nvxiuwang.com. it contains android app and ios app.
+                       </div>
+                   </div>
+               </div>
+            </div>
+
+        <div class="row">
+               <div class="col-md-6">
+               <div class="panel panel-default">
+                   <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project8.jpg"></div>
+                   <div class="panel-footer panel-info">
+                       <h4 class="text-center">Xin Haifei plastic template</h4>
+                       Set the development, production, sales, leasing as one of the production enterprises of plastic template. The company is located in high tech Zone of Xiangyang City, Hubei Province, the company plant covers an area of 1890 square meters, is a new type of building materials industry leading. In addition, the company also can be the same template for van lining plate, considering that the disposable some site on the plate, in order to facilitate the customers, our company can provide loan template to reduce investment cost.
+                   </div>
+               </div>
+               </div>
+               <div class="col-md-6">
+               <div class="panel panel-default">
+                   <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project7.jpg"></div>
+                   <div class="panel-footer panel-info">
+                       <h4 class="text-center">Yusheng margin</h4>
+                       Zhenping county in Henan Province, China Jade Yusheng margin culture dissemination limited company is located in the "Chinese jade carving of the township" said. In 2013, in response to the government bigger and stronger jade cultural industry call emerge as the times require.
+                   </div>
+               </div>
+               </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+               <div class="panel panel-default">
+                   <div class="panel-body"><img class="banner-img img-rounded" src="/static/company/img/project6.png"></div>
+                   <div class="panel-footer panel-info">
+                       <h4 class="text-center">Stock preparation</h4>
+                       The stock matchs endowment comments China stock index with information network covers the stock index futures, stock matchs endowment etc all kinds of real-time information and we work together to share.
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+    <footer>
+    <div class="blog-footer">
+        <p>Copyright (c) 2014 bigtotoro.com. All rights reserved. Write by <a href="http://bigtotoro.com"> Bigtotoro
+            Information Technology Co Ltd. </a></p>
+    </div>
+    </footer>
+
+    <script type="text/javascript" src="/static/bootstrap/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

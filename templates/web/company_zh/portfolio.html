@@ -1,0 +1,49 @@
+{% extends 'web/base.html' %}
+{% block js %}
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/company/company.css"/>
+{% endblock %}
+{% block content %}
+
+    <div class="container company-container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header"><a class="navbar-brand  text-center" href="/"><strong>Bigtotoro</strong></a>
+            </div>
+            <div>
+                <ul class="nav masthead-nav navbar-right">
+                    <li><a href="{% url 'company_home' %}">首页</a></li>
+                    <li class="active"><a href="{% url 'company_portfolio' %}">案例展示</a></li>
+                    <li><a href="{% url 'company_contact' %}">联系我们</a></li>
+                    <li><a href="{% url "blog_home" %}">博客</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header-line"></div>
+
+    <div class="container">
+
+        {% for project in projects %}
+            <div class="col-md-6">
+               <div class="panel panel-default">
+                   <div class="panel-body text-center"><img class="banner-img img-rounded text-center" style="height: 510px;width: auto; margin: auto" src="{{ project.img0.url }}"></div>
+                   <div class="panel-footer panel-info" style="height: 90px">
+                       <h4 class="text-center">{{ project.title }}</h4>
+                       {{  project.desc }}
+                   </div>
+               </div>
+           </div>
+        {% endfor %}
+    </div>
+
+    <!-- /.container -->
+    <footer>
+    <div class="blog-footer">
+        <p>Copyright (c) 2014 bigtotoro.com. All rights reserved. Write by <a href="http://bigtotoro.com"> Bigtotoro
+            Information Technology Co Ltd. </a></p>
+    </div>
+    </footer>
+
+    <script type="text/javascript" src="/static/bootstrap/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}

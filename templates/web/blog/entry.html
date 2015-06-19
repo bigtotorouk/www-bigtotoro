@@ -1,0 +1,28 @@
+{% extends 'web/blog/blog_base.html' %}
+{% block js %}
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/blog/blog.css"/>
+    <script type="text/javascript" src="/static/bootstrap/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/jquery.ajax.min.js"></script>
+{% endblock %}
+{% block blog-content %}
+    <div class="blog-post">
+        <h2 class="blog-post-title">{{ post.title }}</h2>
+        <p class="blog-post-meta">{{ post.post_date | date:"D d, M Y" }}
+        <div class="entry">
+            {{ post.content | safe }}
+        </div>
+
+    </div>
+    {% if comments %}
+        <h3>Commnets</h3>
+        {% for comment in comments %}
+            <hr/>
+            <div><strong>{{ comment.name }}</strong></div>
+            <div>{{  comment.content }}</div>
+
+        {% endfor %}
+    {% endif %}
+{%  include 'web/blog/contact.html' %}
+{% endblock %}
+

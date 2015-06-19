@@ -1,0 +1,125 @@
+{% extends 'web/base.html' %}
+{% block js %}
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/company/company.css"/>
+{% endblock %}
+{% block content %}
+    <div class="container company-container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header"><a class="navbar-brand  text-center" href="/"><strong>Bigtotoro</strong></a></div>
+            <div>
+                <ul class="nav masthead-nav navbar-right">
+                    <li class="active"><a href="{% url 'company_home' %}">Home</a></li>
+                    <li><a href="{% url 'company_portfolio' %}">Portfolio</a></li>
+                    <li><a href="{% url 'company_contact' %}">Contact</a></li>
+                    <li><a href="{% url "blog_home" %}">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div style="background-color: #269abc">
+
+
+        <div id="carousel-example-generic" class="carousel" data-ride="carousel" >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="/static/company/img/t_banner-00.jpg">
+{#                    <div style="float:right;margin-top:100px;">#}
+{#                        <div style="text-align: center">#}
+{#                                <h2 style="color:#0379d4;font-weight:bolder;">Mobile application development</h2><br>#}
+{#                                <p style="color: #ffffff">用于推广移民、留学、海外置业、技术移民企业。</p>#}
+{#                                <p style="color: #ffffff">手机随时随地查看相关的信息，跟专家交流互动。</p><br>#}
+{#                                <a class="btn btn-info" href="#">View case >></a>#}
+{#                        </div>#}
+{#                    </div>#}
+                </div>
+                <div class="item">
+                    <img style="width: 100%;height: auto" src="/static/company/img/t_banner-01.jpg">
+                </div>
+                <div class="item">
+                    <img src="/static/company/img/t_banner-02.jpg">
+                </div>
+                <!-- Carousel -->
+            </div>
+        </div>
+            </div>
+
+    <!--  -->
+    <div class="container">
+        <div class="marketing">
+        <div style="padding-left:160px;">
+            <span style="font-size:50px;font-weight:bolder;color:#676767;">About</span><span style="display:inline-block;padding-left:20px;color:#0379d4;font-size:30px;">We provide you with products and services</span>
+			<div style="font-size:14px;">Service Corporation IT informatization one-stop network support and business efficiency and professional operation, expand your business channel, innovation after the one-stop service network brand!</div>
+		</div>
+		<br>
+		<div class="row" style="text-shadow:0 0px 0px rgba(0,0,0,0);">
+				<div class="col-lg-4 col-md-4">
+					<div class="lg"><img src="/static/company/img/website.png" onmouseover="javascript:$(this).toggleClass('moveleft');" onmouseout="javascript:$(this).toggleClass('moveleft');" alt="website" style="width:96px; height:96px;margin-top:45px;" class="moveleft"></div>
+					<h2>Website development</h2>
+					<p>The website construction of open Internet Era, enhance the brand value of the force of your company</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="lg"><img src="/static/company/img/iphone.png" onmouseover="javascript:$(this).toggleClass('moveleft');" onmouseout="javascript:$(this).toggleClass('moveleft');" alt="phone" style="width:65px; height:107px;margin-top:45px;"></div>
+					<h2>Mobile app development</h2>
+					<p>Mobile phone App let you or your business online communication with the world 6 billion people</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="lg"><img src="/static/company/img/weixin.png" onmouseover="javascript:$(this).toggleClass('moveleft');" onmouseout="javascript:$(this).toggleClass('moveleft');" alt="weixin" style="width:131px; height:105px;margin-top:45px;"></div>
+					<h2>WeChat</h2>
+					<p>WeChat fashion trend, however, only provide service in china location.</p>
+				</div>
+		</div>
+        <br>
+        <br><!-- case -->
+	    <div style="background:#f8f8f8;">
+
+			<div><span style="font-size:50px;font-weight:bolder;color:#676767;">Case</span><span style="display:inline-block;padding-left:20px;font-size:16px;">Promoting company brand value</span></div>
+			<div style="font-size:14px;">----Detail decides success or failure, the heart is more important than what, every construction site cases, are we forward growth of the witness!</div>
+			<br>
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case1.png" alt="website" style="width:345px; height:212px;">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case2.png" alt="phone" style="width:345px; height:212px;">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case3.png" alt="weixin" style="width:345px; height:212px;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case4.png" alt="website" style="width:345px; height:212px;">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case5.png" alt="phone" style="width:345px; height:212px;">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<img src="/static/company/img/case6.png" alt="weixin" style="width:345px; height:212px;">
+				</div>
+			</div>
+
+	    </div>
+        </div>
+
+    </div>
+
+
+
+     <!-- /.container -->
+    <div class="blog-footer">
+        <p>Copyright (c) 2014 www.bigtotoro.com. All rights reserved. Write by <a href="http://bigtotoro.com"> Bigtotoro
+            Information Technology Co Ltd. </a></p>
+    </div>
+    <script type="text/javascript" src="/static/bootstrap/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+{% endblock %}
