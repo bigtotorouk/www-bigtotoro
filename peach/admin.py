@@ -11,7 +11,7 @@ class PeachUserAdmin(admin.ModelAdmin):
     list_display = ('username', 'password', 'email', 'date_joined', 'photo')
     search_fields = ('username',)
     date_hierarchy = 'date_joined'
-    fields = ('username', 'password', 'email', 'date_joined', 'photo')
+    # fields = ('username', 'password', 'email', 'date_joined', 'photo')
 
 
 from django.forms.fields import ChoiceField
